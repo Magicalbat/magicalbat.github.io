@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+  category: null
+- name: About
+  link: /about.html
+  category: null
+- name: Articles
+  link: /articles.html
+  category: articles
+- name: Blog
+  link: /blog.html
+  category: blog

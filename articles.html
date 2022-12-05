@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>Latest Articles</h1>
+
+<ul>
+    {% for article in site.categories.articles %}
+        <li>
+        <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+        {{ article.excerpt }}
+        </li>
+    {% endfor %}
+</ul>

@@ -5,10 +5,10 @@ html {
   --palette-col-4:  #439691;
   --palette-col-5:  #ffffff;
   
-  /*--palette-col-5:  #fbfbd2;
+  /*--palette-col-5:  #fbfbd2;*/
   --palette-col-6:  #e4c199;
   --palette-col-7:  #bf934a;
-  --palette-col-8:  #6f574d;*/
+  --palette-col-8:  #6f574d;
 }
 
 body {
@@ -40,5 +40,9 @@ body {
   background-color: var(--palette-col-2);
 }
 .top-nav-link:hover {
-  background-color: rgb(199, 238, 255);
+  background-color: var(--palette-col-3);
+}
+
+.top-nav-selected {
+  color: var(--palette-col-6)
 }

@@ -1,5 +1,5 @@
 ---
-layout: blog_post
+layout: post
 author: Magicalbat
 ---
 

@@ -46,3 +46,28 @@ body {
 .top-nav-selected {
   color: var(--palette-col-6);
 }
+
+
+
+.main-article-div {
+    display: grid;
+    grid-template-columns: auto 735px auto;
+}
+
+.main-article {
+    font-size: 20px;
+    grid-column: 2;
+}
+
+@media (max-width: 735px) {
+    .main-article-div {
+        display: inline-block;
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+        word-break: break-all;
+    }
+
+    .main-article {
+        font-size: 18px;
+    }
+}

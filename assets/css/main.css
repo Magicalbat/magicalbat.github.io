@@ -44,5 +44,5 @@ body {
 }
 
 .top-nav-selected {
-  color: var(--palette-col-6)
+  color: var(--palette-col-6);
 }

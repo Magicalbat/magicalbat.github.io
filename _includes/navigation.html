@@ -1,6 +1,6 @@
 <nav class="top-nav">
     {% for item in site.data.navigation %}
-    <a class="top-nav-link" href="{{ item.link }}" {% if page.url == item.link or page.categories contains item.category %} style="color: red;" {% endif %}>
+    <a href="{{ item.link }}" {% if page.url == item.link or page.categories contains item.category %} style="color: red;" class="top-nav-link top-nav-selected" {% else %} class="top-nav-link" {% endif %}>
         {{ item.name }}
     </a>
     {% endfor %}

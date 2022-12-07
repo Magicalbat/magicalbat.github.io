@@ -24,13 +24,14 @@ body {
   border-bottom-style: solid;
   border-color: var(--palette-col-5);
   border-bottom-width: 2px;
-  font-size: 1.5rem;
+  font-size: 22px;
   line-height: 2.5rem;
   padding: 0.5rem;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(5rem, auto));
-  column-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(4.5rem, auto));
+  column-gap: 5px;
+  row-gap: 5px;
 }
 
 .top-nav-link {
@@ -47,8 +48,6 @@ body {
   color: var(--palette-col-6);
 }
 
-
-
 .main-article-div {
     display: grid;
     grid-template-columns: auto 735px auto;
@@ -57,6 +56,11 @@ body {
 .main-article {
     font-size: 20px;
     grid-column: 2;
+    line-height: 1.67;
+}
+
+.hljs {
+    font-size: 18px;
 }
 
 @media (max-width: 735px) {
@@ -69,5 +73,9 @@ body {
 
     .main-article {
         font-size: 18px;
+    }
+
+    .hljs {
+        font-size: 16px;
     }
 }

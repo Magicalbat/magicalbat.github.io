@@ -6,8 +6,8 @@ layout: default
 
 <ul>
     {% for article in site.categories.articles %}
-        <li>
-        <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+        <li class="post-elem">
+        <h2><a class="post-link" href="{{ article.url }}">{{ article.title }}</a></h2>
         {{ article.excerpt }}
         </li>
     {% endfor %}

@@ -50,7 +50,7 @@ body {
 
 .main-article-div {
     display: grid;
-    grid-template-columns: auto 735px auto;
+    grid-template-columns: minmax(10%, auto) 735px minmax(10%, auto);
 }
 
 .main-article {
@@ -63,7 +63,7 @@ body {
     font-size: 18px;
 }
 
-@media (max-width: 735px) {
+@media (max-width: 920px) {
     .main-article-div {
         display: inline-block;
         word-wrap: break-word; 
@@ -72,10 +72,21 @@ body {
     }
 
     .main-article {
-        font-size: 18px;
+        padding: 10%;
+        /*font-size: 18px;*/
     }
 
     .hljs {
         font-size: 16px;
     }
+}
+
+.post-elem {
+}
+.post-link {
+    text-decoration-line: none;
+    color: var(--palette-col-6);
+}
+.post-link:hover {
+    text-decoration-line: underline;
 }

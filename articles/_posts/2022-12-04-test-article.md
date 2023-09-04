@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Magicalbat
+title: "Test Article"
 ---
 
 This is my first article.

@@ -70,14 +70,14 @@ body {
 @media (max-width: 920px) {
     .main-article-div {
         display: inline-block;
-        word-wrap: break-word; 
+        /*word-wrap: break-word; 
         overflow-wrap: break-word; 
-        word-break: break-all;
+        word-break: break-all;*/
     }
 
     .main-article {
-        padding: 10%;
-        /*font-size: 18px;*/
+        padding: 5%;
+        font-size: 18px;
     }
 
     .hljs {

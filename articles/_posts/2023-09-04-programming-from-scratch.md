@@ -2,6 +2,7 @@
 layout: post
 title: "Programming \"From Scratch\""
 author: Magicalbat
+description: "My thoughts on what programing \"from scratch\" really means."
 ---
 
 Recently, I have become interested in making programs from scratch in C. It provides an unbiased look at what goes on behind the scenes of the systems all of us use daily. Things that people take for granted like dynamic containers, classes, generics/templates, and package management are not present in C. In [one of my recent projects](https://github.com/Magicalbat/Animated-Presentation), I challenged myself to create everything without using any external libraries. I was going to do it “from scratch”. But, in the project, I am using the C standard library, the Win32 API, X11, GLX, and OpenGL. I did not get these from random github pages, but they are libraries nonetheless. To me, it begs the question: what does it even mean to program from scratch? Where do you draw the line?

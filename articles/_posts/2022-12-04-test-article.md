@@ -2,6 +2,7 @@
 layout: post
 title: "Test Article"
 author: Magicalbat
+description: "This is a test article."
 ---
 
 This is my first article.

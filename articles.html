@@ -3,13 +3,17 @@ layout: default
 title: Magicalbat - Articles
 ---
 
-<h1>Latest Articles</h1>
+<h1 style="text-align: center;">Latest Articles</h1>
 
-<ul>
+<div class="posts-container">
+<div class="posts">
     {% for article in site.categories.articles %}
-        <li class="post-elem">
-        <h2><a class="post-link" href="{{ article.url }}">{{ article.title }}</a></h2>
-        {{ article.excerpt }}
-        </li>
+        <a class="post-elem" href="{{ article.url }}">
+            <h2 class="post-title">{{ article.title }}</h2>
+            <p class="post-date">{{ article.date | date_to_string }}</p>
+            <p class="post-desc">{{ article.description }}</p>
+        </a>
     {% endfor %}
-</ul>
+</div>
+</div>
+

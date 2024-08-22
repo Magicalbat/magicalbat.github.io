@@ -1,39 +1,47 @@
-html {
+html {}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 .top-nav {
-  top: 0;
-  left: 0;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  font-size: 22px;
-  line-height: 2.5rem;
-  padding: 0.5rem;
+    top: 0;
+    left: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    font-size: 22px;
+    line-height: 2.5rem;
+    padding: 0.5rem;
 
-  display: grid;
-  justify-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(4, minmax(4.5rem, auto));
-  column-gap: 5px;
-  row-gap: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.top-nav-links {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, minmax(4.5rem, auto));
+    column-gap: 5px;
+    row-gap: 5px;
 }
 
 .top-nav-link {
-  text-decoration: none;
-  text-align: center;
-
-  /*padding-inline: 3%;
-  background-color: lightgray;*/
+    text-decoration: none;
+    text-align: center;
+    padding-inline: 10%;
 }
+
 .top-nav-link:hover {
+    background-color: #eeeeee;
 }
 
-.top-nav-selected {
-}
+.top-nav-selected {}
 
 .main-article-div {
     display: grid;
@@ -44,7 +52,6 @@ body {
     font-size: 20px;
     grid-column: 2;
     line-height: 1.67;
-    text-indent: 10%;
 }
 
 .main-article-title {
@@ -75,9 +82,10 @@ body {
 
 .posts-container {
     display: grid;
-    grid-template-columns: minmax(10%, auto) 735px minmax(10%, auto);
+    grid-template-columns: minmax(10%, auto) minmax(80%, 735px) minmax(10%, auto);
     /* TODO: mobile support */
 }
+
 .posts {
     grid-column: 2;
 }
@@ -91,12 +99,17 @@ body {
     padding: 0.25em;
     margin: 2em;
 }
+
+.post-elem:hover {
+    background-color: #dddddd;
+}
+
 .post-title {
     margin: 0em;
 }
+
 .post-date {
     margin: 0em;
     font-size: 12px;
     font-style: italic;
 }
-

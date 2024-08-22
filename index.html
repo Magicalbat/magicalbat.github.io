@@ -3,7 +3,39 @@ layout: default
 title: Magicalbat - Home
 ---
 
-<h1>{{ "Hello World!" }}</h1>
+<div style="display: grid; grid-template-columns: 1fr 1fr;">
 
-<h1><a class="post-link" href="articles.html">Latest Articles<a></h1>
-<h1><a class="post-link" href="blog.html">Latest Blog Posts</a></h1>
+    <div>
+        <h2 style="text-align: center;">Latest Articles</h2>
+
+        <div class="posts-container">
+        <div class="posts">
+            {% for article in site.categories.articles limit:3 %}
+                <a class="post-elem" href="{{ article.url }}">
+                    <h2 class="post-title">{{ article.title }}</h2>
+                    <p class="post-date">{{ article.date | date_to_string }}</p>
+                    <p class="post-desc">{{ article.description }}</p>
+                </a>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 style="text-align: center;">Latest Blog Posts</h2>
+
+        <div class="posts-container">
+        <div class="posts">
+            {% for post in site.categories.blog limit:3 %}
+                <a class="post-elem" href="{{ post.url }}">
+                    <h2 class="post-title">{{ post.title }}</h2>
+                    <p class="post-date">{{ post.date | date_to_string }}</p>
+                    <p class="post-desc">{{ post.description }}</p>
+                </a>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+
+</div>
+

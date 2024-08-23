@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .top-nav {
     top: 0;
     left: 0;
@@ -26,8 +31,8 @@ body {
     display: grid;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: repeat(4, minmax(4.5rem, auto));
-    column-gap: 5px;
+    grid-template-columns: repeat(5, minmax(4.5rem, auto));
+    column-gap: 10px;
     row-gap: 5px;
 }
 
@@ -63,11 +68,20 @@ body {
 }
 
 @media (max-width: 920px) {
+    .home-container {
+        display: block;
+    }
+
+    .top-nav {
+        font-size: 16px;
+    }
+
+    .top-nav-links {
+        grid-template-columns: repeat(5, minmax(3em, auto));
+    }
+
     .main-article-div {
         display: inline-block;
-        /*word-wrap: break-word; 
-        overflow-wrap: break-word; 
-        word-break: break-all;*/
     }
 
     .main-article {

@@ -1,10 +1,10 @@
 <nav class="top-nav">
 
-    <a class="mag-link" href="/">Magicalbat</a>
+    <a class="mag-link no-link-style" href="/">Magicalbat</a>
 
     <div class="top-nav-links">
         {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link or page.categories contains item.category %} class="top-nav-link top-nav-selected" color="#e4c199" {% else %} class="top-nav-link" {% endif %}>
+        <a href="{{ item.link }}" {% if page.url == item.link or page.categories contains item.category %} class="top-nav-link no-link-style top-nav-selected" color="#e4c199" {% else %} class="top-nav-link no-link-style" {% endif %}>
             {{ item.name }}
         </a>
         {% endfor %}

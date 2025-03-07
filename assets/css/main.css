@@ -1,6 +1,10 @@
 html {}
 
-a, a:hover, a:visited, a:active {
+a {
+  text-decoration: none;
+}
+
+.no-link-style, .no-link-style:hover, .no-link-style:visited, .no-link-style:active {
     color: inherit;
     text-decoration: none;
 }
@@ -40,6 +44,8 @@ body {
     text-decoration: none;
     text-align: center;
     padding-inline: 10%;
+
+    transition: background-color ease 0.25s;
 }
 
 .top-nav-link:hover {
@@ -57,10 +63,16 @@ body {
     font-size: 20px;
     grid-column: 2;
     line-height: 1.67;
+    text-decoration: none;
 }
 
 .main-article-title {
     text-indent: 0%;
+}
+
+.main-article-date {
+    text-indent: 0%;
+    font-style: italic;
 }
 
 .hljs {

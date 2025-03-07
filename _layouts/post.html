@@ -5,7 +5,7 @@ layout: default
 <div class="main-article-div">
     <article class="main-article">
         <h2 class="main-article-title">{{ page.title }}</h2>
-        <p class="main-article-title">{{ page.date | date_to_string }} - {{ page.author }}</p>
+        <p class="main-article-date">{{ page.date | date_to_string }} - {{ page.author }}</p>
         {{ content }}
     </article>
 </div>
